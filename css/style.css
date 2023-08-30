@@ -1,0 +1,216 @@
+*,
+*::before,
+*::after{
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* nav/header */
+    #navigation{
+        background-color: coral;
+        color: #fff;
+    }
+
+    #navbar{
+        background-color: coral;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    #navigation img{
+        padding: 1%;
+        border-radius: 25%;
+        position: relative;
+        left: 43%;
+    }
+
+    #nav-list{
+        background-color: #333;
+        padding: 1.6%;
+        text-align: center;
+    }
+
+    #nav-list ul{
+        list-style: none;
+    }
+    
+    #nav-list li{
+        display: inline;
+        font-size: 1.5em;
+        padding: 4%;
+    }
+    
+    #nav-list a{
+        text-decoration: none;
+        color: #fff;
+        padding: 1%;
+    }
+
+    #nav-list a:hover{
+        text-decoration: none;
+        color: #000;
+        text-shadow: 0 0 1.5px #666666;
+        padding: 1%;
+        background-color: #fff;
+        opacity: 68%;
+        border-radius: 25px;
+        box-shadow: 0 0 5px #fff;
+    }
+
+    #nav-list a:visited{
+        color: coral;
+    }
+    
+    footer>p{
+        text-align: center;
+    }
+
+    footer>h3{
+        text-align: end;
+    }
+
+    /* HOMEPAGE */
+        /* Main-Part */
+        #main-part{
+            letter-spacing: 3px;
+            margin: 4%;
+            padding: 4%;
+        }
+
+        #main-part h1{
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Arial', 'serif';
+            padding: 3%;
+        }
+
+        #main-part p{
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .container2{
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4%;
+        }
+
+        .container2>.cards{
+            border: 0.5px solid #333;
+            border-radius: 25px;
+            background-color: #dadada;
+        }
+
+        .cards h3{
+            padding: 3%;
+            text-align: center;
+            background-color: #9c9c9c;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+
+        .cards img{
+            border-radius: 25px;
+            position: relative;
+            left: 35%;
+            padding: 3%;    
+        }
+
+        .cards p{
+            padding: 10px;
+        }
+
+        .cards>button{
+            position: relative;
+            left: 40%;
+            border-radius: 25px;
+            border: none;
+            padding: 15px;
+            margin: 5px;
+        }
+
+        .container3{
+            margin-top: 10%;
+        }
+
+        .container3 h3{
+            text-align: center;
+            padding: 5%;
+        }
+
+        form{
+            position: relative;
+            left: 25%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        form input, label{
+            padding: 5px;
+        }
+
+        /* footer */
+        #main-footer{
+            display: flex;
+            flex-direction: row;
+            padding: 5%;
+        }
+
+
+
+    @media (max-width: 418px) {
+    a{
+        display: block;
+        font-size: 11px;
+    }
+    
+    .container2{
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container3, .container3 h3{
+        margin-top: 60%;
+    }
+
+    .container3 img{
+        padding-left: 15px;
+    }
+
+    footer{
+        margin: 140px 0 15px 0;
+    }
+}
+
+@media (max-width: 300px){
+    a{
+        display: block;
+        font-size: 11px;
+    }
+    .container2{
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .container3, .container3 h3{
+        margin-top: 80%;
+    }
+
+    img{
+        padding-left: 15px;
+    }
+}
