@@ -1,0 +1,1 @@
+# zamagiqwa-beads-2023
